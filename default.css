@@ -898,7 +898,6 @@ footer ul li i:hover, footer ul li a:hover {
 }
 
 /* projects */
-
   .post-wrapper {
     display: grid;
     grid-template-columns: 320px, 320px, 320px;
@@ -909,10 +908,17 @@ footer ul li i:hover, footer ul li a:hover {
      "p-five p-six"
      ;
     gap: 20px;
-    justify-content: center;
     padding-bottom: 50px;
   }
 
+  .post {
+      width: 320px;
+      height: 320px;
+  }
+  
+  .thumbnail {
+    height: 200px;
+  }
   /* Footer */
   footer h2 {
     font-size: 25px;
