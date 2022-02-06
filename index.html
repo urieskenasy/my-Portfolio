@@ -7,16 +7,26 @@
       <title>my Portfolio</title>
       <link rel="stylesheet" href="default.css">
       <link id="theme-style" rel="stylesheet" href="">
+      <link rel="icon" href="https://img.icons8.com/fluency/48/000000/puzzle.png"/>
       <script src="https://kit.fontawesome.com/9a5b135e13.js" crossorigin="anonymous"></script>
 </head>
 <body>
+       <!------ Hero section ------>
+       <section id="hero">
+            <div class="hero container">
+                  <div>
+                        <h1 class="section-title">Hello, <span></span></h1>
+                        <h1 class="section-title">my name is <span></span></h1>
+                        <h1 class="section-title">Uri <span></span></h1> 
+                        <a href="#navigation" type="button" class="cta">Click Here</a>
+                  </div>
+            </div>
+      </section>
+      <!------ END Hero section ------>
+
       <!----------- HEADER & NAVBAR ----------->
       <section class="s1">
             <div class="main-container">
-                  <div class="greeting-wrapper">
-                        <h1>Hi, Im Uri Eskenasy</h1>
-                  </div>
-
                   <div class="intro-wrapper">
                         <div class="nav-wrapper">
                             <div class="dots-wrapper">
@@ -62,22 +72,66 @@
                   </div>
             </div>
       </section>
-<!----------- About ME & Skill ----------->
-      <section id="aboutMe" class="s2">
+      <!----------- END Header & Navbar ----------->
+
+      <!--------- Service Section ---------->
+      <section id="services" class="s2">
+            <div class="services container">
+                  <div class="service-top">
+                        <h1 class="section-title">Serv<span>i</span>ces</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nam nulla. Asperiores earum laudantium optio ad ex magni nihil fugiat, voluptatum accusamus placeat excepturi hic molestias corporis minus quod aspernatur?</p>
+                  </div>
+
+                  <div class="service-bottom">
+                        <div class="service-item">
+                              <div class="icon">
+                                    <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-web-design-responsive-web-design-justicon-flat-justicon-1.png"/>
+                              </div>
+                              <h2>Web Design</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis saepe autem sed, sit ea deserunt earum dolore molestiae amet perferendis.</p>
+                        </div>
+                        <div class="service-item">
+                              <div class="icon">
+                                    <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-web-design-uxui-icongeek26-flat-icongeek26.png"/>
+                              </div>
+                              <h2>Front End</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis saepe autem sed, sit ea deserunt earum dolore molestiae amet perferendis.</p>
+                        </div>
+                        <div class="service-item">
+                              <div class="icon">
+                                    <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-code-terminal-web-seo-prettycons-lineal-color-prettycons.png"/>
+                              </div>
+                              <h2>Back End</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis saepe autem sed, sit ea deserunt earum dolore molestiae amet perferendis.</p>
+                        </div>
+                        <div class="service-item">
+                              <div class="icon">
+                                    <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-ethereum-cryptocurrency-tulpahn-outline-color-tulpahn.png"/>
+                              </div>
+                              <h2>Ethereum Tech</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis saepe autem sed, sit ea deserunt earum dolore molestiae amet perferendis.</p>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <!--------- END Service Section ---------->
+
+<!----------- About Me & Skill ----------->
+      <section id="aboutMe" class="s1">
             <div class="main-container">
                   <div class="about-wrapper">
                         <div class="about-me">
-                             <h4>More about me</h4>
+                             <h1 class="section-title">about <span>me</span></h1>
                              <p>I build webpages using Css and Html5, I love web development just because it is very creative and on the same time very logic, i've always liked to solve problems :D</p>
                              <p>While i keep learning all the time I also like to share my code, and get others. in the near future i will get a webDev Full Stack job and continue to always Develop and study more and more.</p>
                        
 
                         </div>
 
-                        <div>
-                               <h4>TOP EXPERTISE</h4>
+                        <div class="top-expertise">
+                               <h2>TOP EXPERTISE</h2>
        
-                               <p class="p-TOP-EXPERTISE">junior Full Stack Developer with primary focus on javaScript and React and nodeJS: <a target="_blank" href="">Download Resume</a></p>
+                               <p class="p-top-expertise">junior Full Stack Developer with primary focus on javaScript and React and nodeJS: <a target="_blank" href="">Download Resume</a></p>
                         
                                <div id="skills">
                                      <ul>
@@ -89,14 +143,16 @@
                                            <li class="li-text"><i class="fab fa-react"></i> React</li>
                                      </ul>
                                </div>
-                        </div>      
+                        </div> 
+                  </div>    
             </div>
       </section>
+      <!----------- END About Me & Skill ----------->
 
-      <!----------- PROJECTS ----------->
-      <section id="projects" class="s1">
+      <!----------- Projects ----------->
+      <section id="projects" class="s2">
             <div class="main-container">
-                  <h3 style="text-align: center;">Some of my past Projects</h3>
+                  <h1 class="section-title" style="text-align: center;">past <span>Projects</span></h1>
                   <div class="post-wrapper">    
                               <div class="post post-one">
                                     <div class="flip-card-inner">
@@ -114,8 +170,7 @@
                                           </div> 
                                     </div> 
                               </div>
-                        
-                     
+                                            
                               <div class="post post-two">
                                     <div class="flip-card-inner">
                                           <div class="flip-card-front">     
@@ -132,8 +187,7 @@
                                           </div> 
                                     </div> 
                               </div>
-                      
-                        
+                                            
                               <div class="post post-three">
                                     <div class="flip-card-inner">
                                           <div class="flip-card-front">     
@@ -188,16 +242,16 @@
                               <div class="post post-six">
                                     <div class="flip-card-inner">
                                           <div class="flip-card-front">     
-                                                <img class="thumbnail" src="./images/landing-page.png" alt="">
+                                                <img class="thumbnail" src="./images/my-web-page.png" alt="">
                                                 <div class="post-preview">
-                                                      <h6 class="post-title">Landing Page</h6>
-                                                      <p class="post-intro">using Grid css Layout</p>
+                                                      <h6 class="post-title">My Web Page</h6>
+                                                      <p class="post-intro">using JavaScript HTML & Css</p>
                                                 </div>
                                           </div>  
                                           <div class="flip-card-back">
-                                                <h6 class="post-title-back">Landing Page</h6>
-                                                <p class="post-intro">using Grid css Layout: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero alias soluta dolor dolore corporis rem incidunt dolores veniam repellat. Molestiae.</p>
-                                                <a href="https://github.com/urieskenasy/Landing-Page---not-finished" target="_blank">Read More</a> 
+                                                <h6 class="post-title-back">My Web Page</h6>
+                                                <p class="post-intro">using JavaScript HTML & Css: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero alias soluta dolor dolore corporis rem incidunt dolores veniam repellat. Molestiae.</p>
+                                                <a href="https://github.com/urieskenasy/my-webpage" target="_blank">Read More</a> 
                                           </div> 
                                     </div> 
                               </div>
@@ -205,35 +259,39 @@
                   </div>
             </div>
       </section>
-<!----------- CONTACT ----------->
-      <section id="contact" class="s2">
+      <!----------- END Projects ----------->
+
+     <!----------- CONTACT ----------->
+      <section id="contact" class="s1">
             <div class="main-container">
-                  <h3 style="text-align: center;">Get In Touch</h3>
+                  <h1 class="section-title" style="text-align: center;">Get In <span>Touch</span></h1>
 
                   <form id="contact-form">
                         <label>Name</label>
-                        <input class="input-field" type="text" name="name">
+                        <input class="input-field" type="text" name="name" placeholder="type your full name here">
 
                         <label>Subject</label>
-                        <input class="input-field" type="text" name="subject">
+                        <input class="input-field" type="text" name="subject" placeholder="type me a few words to understand the topic">
 
                         <label>Email</label>
-                        <input class="input-field" type="text" name="email">
+                        <input class="input-field" type="text" name="email" placeholder="type your full Email address">
 
                         <label>Message</label>
-                        <textarea class="input-field" type="text" name="message"></textarea>
+                        <textarea class="input-field" type="text" name="message" placeholder="type here your message"></textarea>
 
                         <input id="submit-btn" type="submit" value="Send">
                   </form>
             </div>
             <footer>
+                  <h2>You can also find me on social media:</h2>
                   <ul>
-                        <li><a href="https://github.com/urieskenasy"><i class="fab fa-github"></i> gitHub</a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
-                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a></li>
+                        <li><a href="https://github.com/urieskenasy"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
                   </ul>
             </footer>
       </section>
+      <!----------- END CONTACT ----------->
       
       <script type="text/javascript" src="./script.js"></script>
 </body>
