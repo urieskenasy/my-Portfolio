@@ -100,6 +100,16 @@ h6 { font-size: 16px;}
   letter-spacing: .2rem;
   text-align: center;
 }
+
+.go-up-btn {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+
+.go-up-btn:hover a {
+  color: white;
+}
 /*********************** END COMMON STYLING **********************/
 
 /*********************** Hero section ***********************/
