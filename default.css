@@ -199,7 +199,7 @@ animation-delay: 0.3s;
 }
 /********************************* END Hero section ********************************/
 
-/*********************** NAVIGATION + HEADER = BANNER**********************/
+/*********************** Nav Bar + Header Section **********************/
 .main-container {
   width: 1200px;
   margin: 50px auto;
@@ -224,7 +224,6 @@ animation-delay: 0.3s;
 }
 
 /****************************** Nav-Bar ******************************/
-
 .nav-wrapper {
   grid-area: nav-wrapper;
   border-bottom: 1px solid var(--borderColor);
@@ -296,7 +295,7 @@ animation-delay: 0.3s;
   cursor: pointer;
   transform: scale(1.3);
 }
-/****************************** END Nav-Bar ******************************/
+/****************************** END Nav Bar + Header Section ******************************/
 
 /****************************** Left Column ******************************/
 .left-column {
@@ -433,7 +432,7 @@ animation-delay: 0.3s;
 }
 /****************************** END Right Column ******************************/
 
-/********************  Services section ********** *********/
+/********************  Services Section *******************/
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -462,6 +461,11 @@ animation-delay: 0.3s;
   color: dodgerblue;
 }
 /*#### repeat for headers with span END ####*/
+
+#services .service-top p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
 
 /********* Cards Part ********/
 #services .service-bottom {
@@ -560,10 +564,14 @@ animation-delay: 0.3s;
 .about-me p {
    margin-bottom: 10px;
    text-align: center;
+   font-size: 1.8rem;
+   font-weight: 300;
 }
 
 .p-top-expertise {
   margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 #skills {
@@ -715,6 +723,10 @@ animation-delay: 0.3s;
   color: black;
 }
 
+.flip-card-front p {
+  font-size: 1.1rem;
+}
+
 .flip-card-back {
   background-color: transparent;
   color: white;
@@ -722,7 +734,15 @@ animation-delay: 0.3s;
 }
 
 .flip-card-back h6, p, a {
-  margin: 25px;
+  margin: 15px;
+}
+
+.flip-card-back h6 {
+  font-size: 2rem;
+}
+
+.flip-card-back p {
+  font-size: 1.4rem;
 }
 
 .thumbnail {
@@ -845,7 +865,7 @@ footer ul li i:hover, footer ul li a:hover {
 }
 /*********************** END Animation **********************/
 
-/************ screen Versions ************/
+/************************ screen Versions ************************/
 @media screen and (max-width: 1200px) {
    
   .main-container {
@@ -870,6 +890,7 @@ footer ul li i:hover, footer ul li a:hover {
   font-size: 5rem;
 }
 /* hero END */
+
 /**** Header & Nav-Bar *****/
   .intro-wrapper {
     grid-template-columns: 1fr;
@@ -880,24 +901,35 @@ footer ul li i:hover, footer ul li a:hover {
     ;
   
   }
-
   .right-column {
     justify-content: center;
     padding-bottom: 150px;
   }
-
   #skills ul li i:hover {
     transform: none;
   }
+/**** END Header & Nav-Bar  *****/  
 
-/********** Services section *********/
-
+/***** Services section *****/
 #services .service-bottom .service-item {
   flex-basis: 45%;
   margin: 2.5%;
 }
+#services .service-top p {
+  font-size: 1.2rem;
+}
+/***** END Services section *****/
 
-/* projects */
+/****** About Me *****/
+.about-me p {
+  font-size: 1.4rem;
+}
+.p-top-expertise {
+ font-size: 1.4rem;
+}
+/****** END About Me *****/
+
+/****** Projects ******/
   .post-wrapper {
     display: grid;
     grid-template-columns: 320px, 320px, 320px;
@@ -910,16 +942,28 @@ footer ul li i:hover, footer ul li a:hover {
     gap: 20px;
     padding-bottom: 50px;
   }
-
   .post {
       width: 320px;
       height: 320px;
   }
-  
+  .flip-card-front h4 {
+    font-size: 1.2rem;
+  }
+  .flip-card-front p {
+    font-size: 1rem;
+  }
+  .flip-card-back h6 {
+    font-size: 1.4rem;
+  }
+  .flip-card-back p {
+    font-size: 1rem;
+  }
   .thumbnail {
     height: 200px;
   }
-  /* Footer */
+  /***** END Projects *****/
+
+  /***** Footer ******/
   footer h2 {
     font-size: 25px;
     text-align: center;
@@ -930,83 +974,82 @@ footer ul li i:hover, footer ul li a:hover {
 /*********************** Mobile Version ***********************/
 @media screen and (max-width: 550px) {
  
+/****** Hero ******/
   #hero h1 {
     font-size: 2.5rem;
   }
-
   .cta {
     padding: 10px 30px;
     font-size: 1.2rem;
     margin-top: 50px;
 
   }
-
 .greeting-wrapper > h1 {
   font-size: 1.9rem;
 }
+/****** END Hero ******/
 
-
-/*** navigation ***/
+/***** Navigation *****/
 #navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .browser-dot {
   height: 30px;
   width: 30px;
 }
-
 #navigation li a {
   font-size: 1rem;
   padding: 10px 0;
 }
-
 .right-column  {
   margin-bottom: 50px;
 }
+/***** END Navigation ******/
 
-/********** Services section *********/
+/***** Services section *****/
+#services .service-top p {
+  font-size: 1rem;
+}
 /* cards */
-
 #services .service-bottom {
   flex-direction: column;
-
 }
-
 #services .service-bottom .service-item {
   margin: 2.5%;
 }
 /**** END Services section ****/
 
-/*** Skills Div ***/
+/****** About Me ******/
+.about-me p, .p-top-expertise  {
+  font-size: 1.2rem;
+}
+
+/*** skills div ***/
 .top-expertise {
        display: flex;
        justify-content: flex-start;
        flex-direction: column;
        align-items: center;
 }
-
 .top-expertise > h2 {
   text-align: left;
   margin-bottom: 20px;
 }
-
 #skills {
   padding: 40px;
 }
-
 #skills ul li {
   font-size: 15px;
 }
-
 /* icons list */
 .first-ul li i {
    font-size: 40px;
 }
+/****** END About Me ******/
 
-/* projects Section */
+/****** projects Section ******/
 .post-wrapper {
   display: grid;
   grid-template-columns: 320px, 320px, 320px, 320px, 320px, 320px;
@@ -1022,8 +1065,9 @@ footer ul li i:hover, footer ul li a:hover {
   justify-content: center;
   padding-bottom: 50px;
 }
+/****** END projects Section ******/
 
-/* footer Section*/
+/******* footer Section *******/
 footer {
   height: auto;
 }
@@ -1032,6 +1076,6 @@ footer h2 {
   font-size: 17px;
   text-align: center;
 }
-  
+/******* END footer Section *******/  
 }
 /*********************** END Mobile Version ***********************/
