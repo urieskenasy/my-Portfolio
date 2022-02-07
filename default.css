@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 :root {
   scroll-behavior: smooth;
@@ -19,7 +19,7 @@
   --borderColor: #c1c1c1;
 
   --mainText: black;
-  --secondaryText: #4b5156;
+  --secondaryText: #7c8083;
 
   --themeDotBorder: #24292e;
 
@@ -247,7 +247,6 @@ animation-delay: 0.3s;
 
 #navigation li a:hover {
   color: fuchsia;
-
 }
 
 #navigation {
@@ -743,6 +742,7 @@ animation-delay: 0.3s;
 
 .flip-card-back p {
   font-size: 1.4rem;
+  color: gray;
 }
 
 .thumbnail {
@@ -808,6 +808,62 @@ animation-delay: 0.3s;
   color: #fff;
   background-color: var(--btnColor);
   border: none;
+}
+
+/***** Contact cards *****/
+.contact-cards {
+  min-height: 40vh;
+}
+#contact .contact-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 33%;
+  margin-bottom: 50px;
+}
+
+#contact .contact-item {
+  flex-basis: 33%;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px 0 #00002260;
+  transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+  cursor: pointer;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+   font-size: 2.5rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 /******************************* END CONTACT *******************************/
 
@@ -1066,6 +1122,24 @@ footer ul li i:hover, footer ul li a:hover {
   padding-bottom: 50px;
 }
 /****** END projects Section ******/
+
+/******* Contact Section *******/
+/***** Contact cards *****/
+.contact-cards {
+  min-height: 40vh;
+}
+#contact .contact-items {
+  flex-direction: column;
+}
+
+#contact .contact-info h1 {
+   font-size: 1.4rem;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.2rem;
+}
+/******* END Contact Section *******/
 
 /******* footer Section *******/
 footer {
