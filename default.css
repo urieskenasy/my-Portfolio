@@ -100,16 +100,6 @@ h6 { font-size: 16px;}
   letter-spacing: .2rem;
   text-align: center;
 }
-
-.go-up-btn {
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-}
-
-.go-up-btn:hover a {
-  color: white;
-}
 /*********************** END COMMON STYLING **********************/
 
 /*********************** Hero section ***********************/
@@ -149,7 +139,7 @@ h6 { font-size: 16px;}
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 7rem;
+  font-size: 5rem;
   position: relative;
   color: transparent;
   animation: text-reveal 0.5s ease forwards;
@@ -165,6 +155,9 @@ h6 { font-size: 16px;}
 #hero h1:nth-child(3) {
   animation: text-reveal_name .5s ease forwards;
   animation-delay: 3s;
+}
+#hero h1:nth-child(4) {
+  animation-delay: 4s;
 }
 
 #hero h1 span {
@@ -186,6 +179,9 @@ animation-delay: 0.3s;
 }
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
+}
+#hero h1:nth-child(4) span {
+  animation-delay: 3.5s;
 }
 
 .cta {
@@ -560,7 +556,6 @@ animation-delay: 0.3s;
 /************************* About ME & Skills *************************/
 .about-wrapper {
   display: block;
-  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  */
   padding: 50px 0;
   gap: 20px;
   text-align: center;
@@ -585,9 +580,8 @@ animation-delay: 0.3s;
 
 #skills {
   width: 100%;
- 
   background-color: var(--previewShadow);
-  padding: 10px;
+  padding: 20px;
 }
 
 #skills ul {
@@ -598,6 +592,7 @@ animation-delay: 0.3s;
 
 #skills ul li {
   width: 40%;
+  margin-bottom: 1rem;
   font-size: 30px;
   word-spacing: 200px;
   text-align: justify;
@@ -938,38 +933,35 @@ footer ul li i:hover, footer ul li a:hover {
        width: 95%;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  h1 {
-    animation: none;
-  }
-}
-
 /*********************** Tablet Version ***********************/
 @media screen and (max-width: 800px) {
 
   .section-title {
     font-size: 3rem;
   }
+  .go-up-btn {
+    position: relative;
+    bottom: 1%;
+    right: 1%;
+    display: none;
+    z-index: -1;
+  }
+  
+  .go-up-btn:hover a {
+    color: white;
+    font-size: 2rem;
+  }
   /********** Hero section *********/
 #hero h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 /* hero END */
 
 /**** Header & Nav-Bar *****/
-  .intro-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-     "nav-wrapper"
-     "left-column"
-     "right-column"
-    ;
-  
-  }
   .right-column {
     justify-content: center;
     padding-bottom: 150px;
+    margin-right: 5rem;
   }
   #skills ul li i:hover {
     transform: none;
@@ -1042,11 +1034,11 @@ footer ul li i:hover, footer ul li a:hover {
  
 /****** Hero ******/
   #hero h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .cta {
-    padding: 10px 30px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: .9rem;
     margin-top: 50px;
 
   }
@@ -1056,6 +1048,10 @@ footer ul li i:hover, footer ul li a:hover {
 /****** END Hero ******/
 
 /***** Navigation *****/
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 #navigation {
   display: flex;
   flex-direction: column;
